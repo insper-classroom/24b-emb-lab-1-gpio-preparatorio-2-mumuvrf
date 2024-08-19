@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 const int RED_LED_PIN = 5;
-const int PURPLE_LED_PIN = 7;
-const int BLUE_LED_PIN = 10;
-const int YELLOW_LED_PIN = 13;
+const int PURPLE_LED_PIN = 8;
+const int BLUE_LED_PIN = 11;
+const int YELLOW_LED_PIN = 15;
 
 const int BTN_PIN = 28;
 
@@ -47,7 +47,7 @@ int main() {
       sleep_ms(300);
 
       gpio_put(YELLOW_LED_PIN, 0);
-      sleep_ms(300);
+      // sleep_ms(300);
 
       while (!gpio_get(BTN_PIN)) {
       };
